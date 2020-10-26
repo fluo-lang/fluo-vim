@@ -1,6 +1,6 @@
 let b:current_syntax = "fluo"
 
-syn keyword basicLanguageKeywords let
+syn keyword fluoKeywords let
 syn match fluoNumber '\d\+'
 syn match fluoNumber '[+-]\d\+'
 syn match celNumber '[-+]\d\+\.\d+'
@@ -12,3 +12,6 @@ syn match fluoNumber '\d[[:digit:]]*[eE][\-+]\=\d\+'
 " Floating point like number with E and decimal point (+,-)
 syn match fluoNumber '[-+]\=\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
 syn match fluoNumber '\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
+
+hi def link fluoNumber Constant
+hi def link fluoKeywords Keyword
