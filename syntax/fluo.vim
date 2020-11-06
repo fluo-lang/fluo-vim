@@ -1,6 +1,6 @@
 let b:current_syntax = "fluo"
 
-syn keyword fluoKeywords let pub extern unit rec impl pattern type return yield
+syn keyword fluoKeywords let pub extern unit rec impl pattern type return yield is
 
 syn match fluoMultiLineComment '\/\*\(.\|\n\)\{-}\*\/'
 syn match fluoSingleLineComment '--.*'
