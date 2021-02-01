@@ -1,9 +1,9 @@
 let b:current_syntax = "fluo"
 
-syn keyword fluoKeywords let pub extern unit rec impl pattern type return yield is
+syn keyword fluoKeywords fun class rec instance import return let
 
 syn match fluoMultiLineComment '\/\*\(.\|\n\)\{-}\*\/'
-syn match fluoSingleLineComment '--.*'
+syn match fluoSingleLineComment '#.*'
 
 syn match fluoIdentifier '[a-zA-Z_][a-zA-Z_0-9]*'
 
